@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" viewBox="295,192,121,124" width="121" height="124" xmlns="http://www.w3.org/2000/svg">
+    <g id="background">
+        <path fill="none" stroke="#0c008e" stroke-width="0.1" d="M295.5,192.5 L415.5,192.5 L415.5,315 L295.5,315 L295.5,192.5 Z"/>
+    </g>
+    <g id="Day_Night"><path fill="#A3A488" stroke="#e8f4c2" stroke-width="0.1" d="M351.523,207.253 C261.85,243.244,358.322,351.758,406.423,271.624 L406.287,271.59 C363.125,294.727,324.767,244.191,352.504,207.524 Z"/>
+    </g>
+</svg>

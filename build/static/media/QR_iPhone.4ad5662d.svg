@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" viewBox="24,23,420,423" width="420" height="423" xmlns="http://www.w3.org/2000/svg">
+    <g id="QR-background">
+        <path class="QR_background" fill="red" fill-opacity="0.66" stroke="#7e7c3a" stroke-width="0.1" d="M25,24 L443.5,24 L443.5,445.493 L25,445.493 L25,24 Z"/>
+    </g>
+    <g id="QR-code">
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="35" d="M52.25,53 L199.25,53 L199.25,199.505 L52.25,199.505 L52.25,53 Z"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="35" d="M269.25,53 L416.25,53 L416.25,199.505 L269.25,199.505 L269.25,53 Z"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="35" d="M52.25,269 L199.25,269 L199.25,415.505 L52.25,415.505 L52.25,269 Z"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="36" d="M270.5,252.5 L270.5,288.5"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="36" d="M342.5,396.5 L342.5,432.5"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="36" d="M414.5,396.5 L414.5,432.5"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="35" d="M127.25,108.253 L127.25,144.253"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="35" d="M343.25,108.253 L343.25,144.253"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="35" d="M126.75,324.5 L126.75,360.5"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="36" d="M342.5,252.5 L342.5,324.5"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="36" d="M397,271 L360.577,271"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="36" d="M270.5,324.5 L270.5,396.5"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="36" d="M379,360.5 L379,396.5"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="36" d="M414.5,289.5 L414.5,325.5"/>
+        <path class='QR_icon' fill="#fff" fill-opacity="0.01" stroke="#ece868" stroke-width="36" d="M307,360.5 L307,396.5"/>
+    </g>
+</svg>
+
