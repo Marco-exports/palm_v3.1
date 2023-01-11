@@ -1,0 +1,198 @@
+@media only screen and (min-device-width: 700px){
+  .App {
+    max-width:800px;
+    max-height:480px;
+    -webkit-user-select: none; /* Chrome/Safari */
+  }
+}
+@media only screen and (min-device-width:800px) {
+  .App {
+    max-width: 800px;
+    max-height: 480px;
+    touch-action: none;
+    overflow: hidden;
+    -webkit-user-select: none; /* Chrome/Safari */
+  }
+}
+@media only screen and(min-device-width:890px) {
+  .App {
+    max-width: 1200px;
+    max-height: 580px;
+    touch-action: none;
+    overflow: hidden;
+    -webkit-user-select: none; /* Chrome/Safari */
+  }
+}
+
+body {
+  background: var(--background-color);
+  font: 14px "Century Gothic", Futura, sans-serif;
+  text-align: center;
+  margin: 0px;
+}
+.grid-container {
+  display: grid;
+  width:800px;
+  grid-template-columns: 800px;
+  grid-template-rows: 480px;
+  grid-template-areas: "touchscreen";
+  border: 0px solid var(--border);
+  background-color: var(--background-color);
+  -webkit-user-select: none; /* Chrome/Safari */
+}
+.touchscreen {
+  display: grid;
+  grid-template-columns: 800px;
+  grid-template-rows: 45px 340px 90px;
+  grid-template-areas: "menu" "main" "footer";
+  grid-area: touchscreen;
+  border: 0px solid var(--border);
+  -webkit-user-select: none; /* Chrome/Safari */
+}
+.top-tab {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-areas: "tab1" "tab2" "tab3" "tab4";
+  border: 1px solid var(--topTabs);
+}
+.tab1{
+  float: left;
+  display: inline-block;
+  padding: 1px;
+  width: 200px;
+  height: 45px;
+  top: 0;
+  left: -10px;
+}
+.tab2{
+  color: #f8e16b;
+}
+.tab3{
+  color: #52dd52;
+}
+.tab4{
+  color: #e90de9;
+  width: 200px;
+  padding: 1px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 320px 250px 220px;
+  grid-template-areas: "outdoor" "indoor" "set_temp";
+  border: 0px solid var(--border);
+}
+
+.outdoor {
+  display: grid;
+  margin-top: 25px;
+  grid-template-columns: 320px;
+  grid-template-rows: 30px 110px 26px 10px 90px 26px;
+  grid-template-areas: "out_date" "out_time" "out_text" "out_temp_humid" "h_line" "status" "h_line";
+  border: 0px solid var(--border);
+}
+
+.indoor {
+  display: grid;
+  margin-top: 25px;
+  grid-template-columns: 250px ;
+  grid-template-rows: 50px 170px 30px 200px;
+  grid-template-areas: "indoor_label" "temp_indoor" "humidity" "windows";
+  border: 1px solid var(--border);
+}
+
+.set_temp {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 220px;
+  grid-template-rows: 150px 80px 80px 80px 40px;
+  grid-template-areas: "arrow_up" "temp_setting" "arrow_down" "fans" "fan_text";
+  border: 0px solid #323eaa;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 320px 220px 250px;
+  grid-template-areas: "footer_left footer_center footer_right";
+  grid-area: footer;
+  border: 0px solid var(--border);
+  color: var(--footerText);
+  margin-top: 10px;
+}
+.config_room{
+  margin-top: -55px;
+  left: 30px;
+  color: var(--footerText);
+}
+.motion_PIR{
+  margin-top: 4px;
+  color: var(--footerText);
+}
+.one_Wire_Temp{
+  margin-top: 1px;
+  color: var(--footerText);
+}
+.backlight  {
+  margin-top: 1px;
+}
+
+.footer_left {
+  grid-area: footer_left;
+  border: 0px solid var(--border);
+  margin-top: 35px;
+}
+.footer_center {
+  grid-area: footer_center;
+  border: 0px solid var(--border);
+  margin-top: 30px;
+}
+.footer_right {
+  grid-area: footer_right;
+  border: 0px solid var(--border);
+  text-align: center;
+  margin-top: 50px;
+}
+.out_date {
+  position: relative;
+  right: 32px;
+  font-size: 20px;
+  color: var(--primaryText);
+}
+.out_time{
+  position: relative;
+  right: 30px;
+  font-size: 46px;
+  color: var(--primaryText);
+}
+.out_text{
+  position: relative;
+  right: 85px;
+  font-size: 22px;
+  color: var(--primaryText);
+}
+.h_line {
+  position: relative;
+  width:80%;
+  left: 25px;
+  height:2px;
+  background: var(--primaryText);
+  color: var(--primaryText);
+}
+.out_temp_humid{
+  left: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--primaryText);
+}
+.out_temp_humid_wind{
+  margin-top: 10px;
+  left: 10px;
+  font-size: 17px;
+  color: var(--primaryText);
+}
+.status{
+  position: relative;
+  right: 104px;
+  font-size: 22px;
+  color: var(--primaryText);
+}
