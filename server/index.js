@@ -1,7 +1,8 @@
-// START:  nodemon server
-process.title = 'SABIANA'
+// START: < nodemon server > or < sudo node server >
+console.log(` PLATFORM : ${process.platform}`)
 console.log('Node: ' + process.version + ' / PID: ' + process.pid + ' : SABIANA')
 console.log(`PLATFORM : ${process.platform}`)
+
 if (process.platform==='linux') {
    const pigpio = require('pigpio')
    pigpio.terminate()
@@ -9,8 +10,14 @@ if (process.platform==='linux') {
    console.log('pigpio Hardware: ' + pigpio.hardwareRevision().toString(16))
    pigpio.configureClock(5, pigpio.CLOCK_PWM)   // lowest CPU usage
 }
+
+console.log(' Node -v : ' + process.version)     // node -v == v12.22.4
 const port = process.env.PORT || 8080
 const config_files = require('./config')   // config ROOM --> global X
+console.log(config_files)     //  -->  "ROOM_Id : CFG_PC601_STUDY"
+
+// **** **** **** **** **** **** **** **** ****
+
 const http = require("http")
 const bodyParser = require("body-parser")
 const express = require("express")
@@ -64,6 +71,7 @@ if(process.platform==='linux') {
    WATER.pwmFrequency(2000)
    SABIANA.pwmFrequency(2000)
    console.log("starting GPIO 12/18 : " + WATER.getPwmFrequency() +" : " +SABIANA.getPwmFrequency())
+
    setInterval(() => {
       WATER.pwmWrite(dutyCycle)
       SABIANA.pwmWrite(dutyCycle)
